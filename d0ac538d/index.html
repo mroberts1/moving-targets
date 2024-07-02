@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.335">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>index</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="index_files/libs/clipboard/clipboard.min.js"></script>
+<script src="index_files/libs/quarto-html/quarto.js"></script>
+<script src="index_files/libs/quarto-html/popper.min.js"></script>
+<script src="index_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="index_files/libs/quarto-html/anchor.min.js"></script>
+<link href="index_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="index_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="index_files/libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="index_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="index_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="index_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="index_files/libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script src="index_files/libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="index_files/libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="index_files/libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
+<script src="index_files/libs/quarto-contrib/videojs/video.min.js"></script>
+<link href="index_files/libs/quarto-contrib/videojs/video-js.css" rel="stylesheet">
+<link href="index_files/libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
+<link href="index_files/libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
+<style>html{ scroll-behavior: smooth; }</style>
+
+
+</head>
+
+<body>
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-full">
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+</div>
+<main class="content page-columns page-full column-body" id="quarto-document-content">
+
+
+
+<div class="column-screen">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="img/moving-targets.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="img/moving-targets.png" class="img-fluid figure-img"></a></p>
+</figure>
+</div>
+</div>
+<section id="moving-targets" class="level1 page-columns page-full">
+<h1>Moving Targets</h1>
+<p><strong>Object Detection and Algorithmic Aesthetics</strong></p>
+<p>Martin Roberts<br>
+Keene State College<br>
+Society for Cinema &amp; Media Studies Conference<br>
+Denver, 12 April 2023<br>
+<a href="mailto:mroberts1@gmail.com"><i class="fa-regular fa-envelope" aria-label="envelope"></i></a> | <a href="https://merveilles.town/@dokoissho"><i class="fa-brands fa-mastodon" aria-label="mastodon"></i></a> | <a href="https://github.com/mroberts1/"><i class="fa-brands fa-github" aria-label="github"></i></a> | <a href="https://facebook.com/mr05301"><i class="fa-brands fa-facebook" aria-label="facebook"></i></a> | <a href="https://twitter.com/dokoissho"><i class="fa-brands fa-twitter" aria-label="twitter"></i></a></p>
+<section id="i.-you-only-look-once" class="level3 page-columns page-full">
+<h3 class="anchored" data-anchor-id="i.-you-only-look-once">I. You Only Look Once</h3>
+<p><a href="https://docs.ultralytics.com/#where-to-start">YOLO</a> is an object-detection algorithm developed by the tech company <a href="https://ultralytics.com">Ultralytics</a>. So named because it requires only one pass to identify objects, in contrast to earlier models, it is currently regarded as an industry leader in the field of computer vision. The model is used in a wide range of applications, from autonomous vehicles to surveillance systems, and is the subject of innumerable YouTube tutorials explaining how to train it on your own datasets, which can be trained to identify, for example, <a href="https://youtu.be/Tk-G4T0VpJo">celebrity cats on Instagram</a>. As machine-learning models go, YOLO is about as user-friendly as it gets for non-specialists, even offering a <a href="https://ultralytics.com/app">mobile app</a> that correctly identified my students as people at the beginning of class a couple of weeks ago.</p>
+<p>While there isn’t time to get into the specifics of how YOLO works and how to use it, I’m assuming that most people here will be at least somewhat familiar with its applications, usually in the form of still or moving images of its outputs, which recall what the documentary filmmaker and media theorist <a href="https://www.harunfarocki.de/home.html">Harun Farocki</a> famously called operational images. The most immediately recognizable feature of these images are the graphic overlays, known as bounding boxes, hovering over still or moving objects identified by the algorithm, with attached tags for what it recognized (person, dog, cup) and a percentage indicating the degree of certainty of the identification.</p>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<div class="quarto-video"><iframe src="https://www.youtube.com/embed/6uLw0f8DltE" width="320" height="200" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+<div class="quarto-video"><iframe src="https://www.youtube.com/embed/ZMGBvVNlJao" width="320" height="200" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+</div></div><p>As already mentioned, object-recognition models like YOLO are already in use across a wide range of contexts, from facial recognition to flagging sick animals in industrial farming. Because the contexts of its uses frequently involve surveillance, its signature bounding boxes are often seen in dystopian terms, occupying a liminal space between cool and creepy.</p>
+<p>In relation to cinema, engagement with machine-learning algorithms (usually referred to by the generic but misleading term “AI”) has taken several forms. On the production side, interest has focused on the automation of creativity itself, whether to <a href="https://deepmind.github.io/dramatron/details.html">generate movie scripts</a> or even <a href="https://www.technologyreview.com/2023/02/06/1067897/runway-stable-diffusion-gen-1-generative-ai-for-video/">short movies generated from wireframe templates or text prompts</a>. For film scholars, interest in algorithmic technologies has focused on early cinema, with algorithmic tools being used to enhance films from the earliest decades of motion pictures by upscaling, increased frame rates, and colorization. YouTube has become the default distribution platform for such works. Computer-vision models like YOLO are an active area of research in film archiving, opening up new possibilities for visual search and metadata tagging of audiovisual archives. (The <a href="https://mediaecology.dartmouth.edu/wp/projects/2019-2021-tier-ii-and-iii-neh-grants/neh-early-cinema-grant">Media Ecology Project</a> spearheaded by Mark Williams at Dartmouth is a case in point.)</p>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<p><br></p>
+<div class="quarto-video"><iframe src="https://www.youtube.com/embed/MQAmZ_kR8S8" width="320" height="200" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+</div></div><div class="page-columns page-full"><p>Rather than with these forms of technical or instrumental engagement with “AI”, however, my focus today is on a different aspect of the relationship between algorithmic technologies and cinema. Wherever we turn today, our world is increasingly run by algorithms, from the stock market to TikTok; there’s even a pop song about it. Correspondingly, within digital media culture recent years have seen a growing number of aesthetic works, including films, that visualize algorithmic processes and operational imagery, whether for cautionary critique or just because it looks cool. More specifically, the algorithmic has become a recurrent motif in audiovisual practices that seek to position themselves at the experimental, avant-garde end of the aesthetic spectrum.</p><div class="no-row-height column-margin column-container"><span class="">I’ll be your algorithm<br>
+Follow your body and<br>
+Watch every way you move<br>
+I’ll be your algorithm<br>
+Your algorithm<br>
+<br> I’ll be your algorithm<br>
+Every step you take<br>
+Every choice you choose<br>
+I’ll be your algorithm<br>
+Your algorithm<br>
+<br> —Charlie Winston, “<a href="https://youtu.be/q9vkGa3fFp8">Algorithm</a>” (2022)</span></div></div>
+<p>The Chinese experimental artist Xu Bing’s film <a href="http://www.xubing.com/en/work/details/469"><em>Dragonfly Eyes</em></a> (2017) is a case in point: a fictionalized reassemblage of surveillance and dashcam footage downloaded from unsecured streaming sites on the internet, the film includes numerous sections of algorithmic object detection, depicting an eerily machinic gaze rather than a human one. Such operational imagery also appears frequently in the work of other experimental artists such as Hito Steyerl.</p>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<div class="quarto-video"><video id="video_shortcode_videojs_video1" width="320" height="200" class="video-js vjs-default-skin " controls="" preload="auto" data-setup="{}" title=""><source src="video/dragonfly-eyes.mp4"></video></div>
+</div></div><p>From its inception and throughout its history, the avant-garde has been defined by its embrace of The Future and rejection of the historical past. AI today is frequently and explicitly framed as a <em>futuristic</em> technology, whose future is currently the subject of intense speculation, whether utopian or–more commonly–dystopian. From this perspective, it is thus understandable that so many artistic practices today aspiring to be avant-garde involve an engagement with (if not necessarily embrace of) the algorithmic. As we will see, each of the projects that I will be discussing today invokes the operational imagery of object detection algorithms like YOLO. While this invocation of AI technologies can be read as critique, it also positions the works themselves as the cutting edge of the avant-garde. More importantly, they represent a particular understanding of machine-learning technologies that I call an algorithmic imaginary.</p>
+</section>
+<section id="ii.-algorithmic-japan" class="level3 page-columns page-full">
+<h3 class="anchored" data-anchor-id="ii.-algorithmic-japan">II. Algorithmic Japan</h3>
+<p>British-Japanese co-productions don’t happen very often. But as the British Film Institute’s website airily puts it,</p>
+<blockquote class="blockquote">
+<p>We have long carried a torch for Japanese film here at the&nbsp;BFI. Since the first&nbsp;BFI&nbsp;London Film Festival opened with Akira Kurosawa’s <em>Throne of Blood</em> in 1957, we’ve played a vital role in bringing the cinema of this culturally rich nation to&nbsp;UK&nbsp;audiences through our festivals, seasons, theatrical distribution, books and video&nbsp;publishing.</p>
+</blockquote>
+<p>That torch has been burning with particular intensity of late, notwithstanding the postponement of the 2020 Olympics due to the Covid pandemic. A brief tour of the U.K.’s torch-bearing for Japanese cinema, and Japanese culture more generally, in recent years might include <em>Japan in Colour</em> (2009), a BBC documentary about the Japanese component of Albert Kahn’s global photographic project, the <a href="https://albert-kahn.hauts-de-seine.fr/en/collections/presentation/a-documentation-project-for-the-world/the-archives-de-la-planete">Archives de la Planète</a>; the <em>Japanorama</em> TV series; a historical retrospective titled <em>Japan 2021: Over 200 Years of Japanese Cinema</em>, originally scheduled to coincide with the Olympics but postponed until October 2021 due to the Covid-19 epidemic; <em>Japan on Film</em>, an archive of digitally-restored early films shot by European travellers in the first few decades of the twentieth century; and <em>Around Japan With A Movie Camera</em>, a compilation of highlights from the <em>Japan on Film</em> collection that was screened at the London Film Festival in October 2021. Many films from the <em>Japan on Film</em> collection are available via the <a href="https://player.bfi.org.uk/free/collection/japan-on-film">BFI Player</a> and posted on the <a href="https://www.youtube.com/playlist?list=PLXvkgGofjDzigkyPk3hKBVc_ns_swkYJQ">BFI’s YouTube channel</a>.</p>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<div class="quarto-video"><iframe src="https://www.youtube.com/embed/m_ORjfpJR6E" width="320" height="200" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+<div class="quarto-video"><iframe src="https://www.youtube.com/embed/ZGnqrvhxYNA" width="320" height="200" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+<div class="quarto-video"><iframe src="https://www.youtube.com/embed/JSOaG6quNqI" width="320" height="200" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+</div></div><p>But this paper isn’t about British Japanophilia as such (yours truly included). My focus here is on a more unusual example of British Japanese cinephilia: the <em>Tokinokawa</em> installation that ran at the BFI’s Southbank gallery from December 2021 until the end of January 2022. Originating in what was planned as a live cinema event to showcase the BFI’s “Japan on Film” collection, the installation was produced by the London-based audiovisual artists Christopher Thomas Allen and <a href="https://timcowie.com/">Tim Cowie</a>, professionally known as <a href="http://www.lightsurgeons.com/">The Light Surgeons</a>. Founded by Allen in 1995, the duo has produced a shockingly wide range of projects over the past quarter century, including audiovisual installations, concert visuals for bands such as the Zero7 and the Cinematic Orchestra, music videos, and live cinema events that juxtapose big-screen video projection with musical performance. They are best known for the live cinema event _Supereverything*_ (2011), which explored Malaysian cultural identity and has been performed all over the world.</p>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<div class="quarto-video"><iframe src="https://www.youtube.com/embed/p6hImQwsTjo" width="320" height="200" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+<div class="quarto-video"><iframe src="https://player.vimeo.com/video/160294592" width="320" height="200" frameborder="0" allow="autoplay; title=" "="" fullscreen;="" picture-in-picture"="" allowfullscreen=""></iframe></div>
+<div class="quarto-video"><iframe src="https://www.youtube.com/embed/24jrR1Ekubs" width="320" height="200" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+</div></div><p>The <em>Tokinokawa</em> installation juxtaposed the BFI’s “Japan on Film” archival collection with contemporary color footage shot by Allen at many of the locations featured in the films, structured as a “river of time” across a multichannel panoramic screen, and featuring Cowie’s immersive sound design and a soundtrack by Japanese composer and sound artist Midori Takada. The films themselves were selected from approximately five hours of restored black and white film footage shot in Kyoto, Yokohama, and Gifu by British, French, and German cinematographers between 1901 and 1929.</p>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<div class="quarto-video"><iframe src="https://www.youtube.com/embed/fql4dIrRKZw" width="320" height="200" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+</div></div><p>Other than the historical interest of the films’ depiction of everyday life in Meiji Japan, the installation’s most spectacular visual element aspect was its application of the YOLO object-detection algorithm to the historical footage, visualized by the signature bounding boxes hovering around people, animals, birds, and objects. The technical process itself was outsourced to a studio called <a href="https://www.artistsandengineers.co.uk/work/the-light-surgeons-tokinokawa">Artists &amp; Engineers</a>. A statement on the company’s website describes it thus:</p>
+<blockquote class="blockquote">
+<p>This film footage from the past and present is analysed in order to transport us into the near future. It is a future where archives are continually examined and mined by semi-autonomous programs that participate in an endless form of data archaeology. This memory retrieval and its ‘artificial gaze’ is presented by an animated infographic layer in the work created using bespoke AI software tools.</p>
+</blockquote>
+<p>In an interview, Christopher Thomas Allen reflects on the implications of the algorithmic gaze:</p>
+<blockquote class="blockquote page-columns page-full">
+<div class="page-columns page-full"><p>It’s scary when you think about how quickly this stuff is becoming used in all sorts of ways, consciously and unconsciously, and how AI models are trained, and who’s training them. In cinema, we have the same problem: <em>whose gaze is this?</em> [My emphasis]</p><div class="no-row-height column-margin column-container"><span class="">Georgia Korossi, “<a href="https://www.bfi.org.uk/interviews/light-surgeons-tokinokawa">Artificial intelligence and archive film: how The Light Surgeons put a new spin on Japan’s earliest moving images</a>,” BFI website, 18 January 2022.</span></div></div>
+<p>Going back to the meaning of the archive, it was western production companies going into Japan, looking at it from an orientalist perspective. In the same sense, we’ve got the same thing, neo-colonialism with AI. It’s rich, white technicians building models based on our own biases. All that stuff’s there, but it’s got the potential to be even more dangerous in a way. For example, we used this model called YOLO, which is used a lot for driverless cars. There’s a whole bunch of these models that you can explore and experiment with.</p>
+</blockquote>
+<p>An interesting aspect of the “Japan on Film” project has been its transnational dimension, involving not only the BFI and British media companies, but also Japanese film archivists and artists. The newly-restored <em>Japan on Film</em> archive was sent over to the National Film Archive of Japan, and the London screening of <em>Around Japan With a Movie Camera</em> included a gracious introduction by a representative of the archive. The Light Surgeons also collaborated with London-based Japanese experimental musician <a href="https://www.hatisnoit.com/">Hatis Noit</a> on a music video that remixes content from the <em>Tokinokawa</em> installation with vocals that reference the music of the Ainu, an ethnic minority in northern Hokkaido.</p>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<div class="quarto-video"><iframe src="https://www.youtube.com/embed/6uAn0VA_7kg" width="320" height="200" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+</div></div></section>
+<section id="iii.-outpainting-japan" class="level3 page-columns page-full">
+<h3 class="anchored" data-anchor-id="iii.-outpainting-japan">III. Outpainting Japan</h3>
+<p>What are we to make of all this? I will conclude with some observations on the <em>Tokinokawa</em> project, algorithmic media, and the BFI’s infatuation with Japanese cinema more generally.</p>
+<blockquote class="blockquote page-columns page-full">
+<div class="page-columns page-full"><p>Ideology’s ultimate trick has always been to present itself as objective truth, to present historical conditions as eternal, and to present political formations as natural. Because image operations function on an invisible plane and are not dependent on a human seeing-subject (and are therefore not as obviously ideological as giant paintings of Napoleon) they are harder to recognize for what they are: immensely powerful levers of social regulation that serve specific race and class interests while presenting themselves as objective.</p><div class="no-row-height column-margin column-container"><span class="">Trevor Paglen, “<a href="https://thenewinquiry.com/invisible-images-your-pictures-are-looking-at-you/">Invisible Images (Your Pictures Are Lookin at You)</a>,” <em>The New Inquiry</em>, 8 December 2016.</span></div></div>
+</blockquote>
+<p>Perhaps the most notable of these is the remarkable institutional power and global reach of the BFI itself, which extends not only to its authority over its own national film culture but also its capacity to shape other national film cultures worldwide, including in this case Japanese film culture. While this would no doubt be framed in the language of intercultural partnership rather than, say, “neocolonialism with AI,” the relations of cultural power here are far from reciprocal; it’s hard to imagine the Japanese National Film Archive having a comparable impact on British film culture through its restoration of archival British early films. In other words, contemporary intercultural relations continue to be inflected by the legacy of colonial histories, and the power relations that enabled British, French, and German early filmmakers to be able to capture and frame “Japan” in their own exoticizing discourse—a discourse that is now re-exported in digital form back to their nation of origin as supposedly neutral documentary observations of “itself.” To my knowledge these asymmetric power relations within global film culture have been barely been addressed, and understandably not by the most powerful institutions among them.</p>
+<p>Although Japan was not historically part of any of European empires, the BFI’s <em>Around Japan With A Movie Camera</em> and its <em>Japan on Film</em> collection has close similarities with ethnographic documentaries that were produced under colonial conditions, such as Vincent Monnikendam’s <em>Mother Dao The Turtle Like</em> (1995), a compilation from the Dutch film archives shot in colonial Java between 1912 and 1932. Japan has been “under Western cinematic eyes,” to paraphrase Chandra Mohanty, from the inception of motion pictures itself: the first cinematographic images of Japan were shot by François-Constant Girel with the famous Lumière <em>cinématographe</em> in 1897.</p>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<div class="quarto-video"><iframe src="https://www.youtube.com/embed/pxT0MOQeT90" width="320" height="200" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+</div></div><div class="page-columns page-full"><p>While the cinematographic and photographic capturing of Japan for Western eyes was at first merely exoticist gazing in wonder at distant cultures, by the mid-twentieth century it had shifted to a preservationist paradigm organized around “disappearing cultures,” as Tiago de Luca notes in the chapter of his book <em>Planetary Cinema</em> on Albert Kahn’s Archives de la Planète project. The BFI’s <em>Japan on Film</em> collection and its associated audiovisual events can certainly be framed within that paradigm, but the <em>Tokinokawa</em> project represents several steps beyond it, incorporating historical film footage into a new scopic regime: not just a digitized but a machine-readable Japan. As Trevor Paglen notes,</p><div class="no-row-height column-margin column-container"><span class="">Tiago de Luca, <a href="https://library.oapen.org/handle/20.500.12657/52144"><em>Planetary Cinema: Film, Media and the Earth</em></a> (Amsterdam: University of Amsterdam Press, 2022), chapter 6.</span></div></div>
+<blockquote class="blockquote page-columns page-full">
+<div class="page-columns page-full"><p>The fact that digital images are fundamentally machine-readable regardless of a human subject has enormous implications. It allows for the automation of vision on an enormous scale and, along with it, the exercise of power on dramatically larger and smaller scales than have ever been possible.</p><div class="no-row-height column-margin column-container"><span class="">Paglen, “Invisible Images”</span></div></div>
+</blockquote>
+<p>The <em>Tokinokawa</em> project stages this machine-readable Japan for us, and invites us to imagine, and in fact stages for us in the present, a near-future cinema in which vision itself has been automated and the human spectator is no longer necessary because <em>the machines watch for us</em>. The question to be asked, then, is not only about whose cinematic gaze this is, as Christopher Thomas Allen says, but also whose eyes this new algorithmic cinema is <em>for</em>, and whose interests it is ultimately serving.</p>
+<p>Once Japan becomes machine-readable, of course, archives such as the <em>Japan on Film</em> collection become a dataset on which future algorithms can be trained, and not only for object detection metadata. The algorithmically-enhanced BFI films themselves are already a form of historical hallucination, but why stop there when AI image synthesis tools today can generate perceptually realistic, cinematic images from a one-sentence prompt? When we can even extrapolate from existing films and images, and fabricate larger images in the margins of existing ones? The problem of tools such as <a href="https://www.midjourney.com/home/?callbackUrl=%2Fapp%2F">Midjourney</a>, <a href="https://openai.com/product/dall-e-2">DALL-E</a>, and <a href="https://stablediffusionweb.com/">Stable Diffusion</a> is not the invisibility of operational images, as Trevor Paglen suggests, but the opposite: their proliferation. The near future anticipated by the <em>Tokinokawa</em> installation its staging of a machine-readable Japan, then, is not only the instrumental future of the automatic archive; it is also the century-old Orientalist fantasy Japan of Shinto rituals and tea ceremonies, samurais and geishas. As the project itself shows, it is a future that has already arrived. We no longer need Tom Cruise in <em>The Last Samurai</em>; now we can generate the movie on our own screens.</p>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="img/midjourney1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img src="img/midjourney1.png" class="img-fluid figure-img"></a></p>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="img/midjourney2.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3"><img src="img/midjourney2.png" class="img-fluid figure-img"></a></p>
+</figure>
+</div>
+<p>Midjourney prompt: <strong>Everyday life in Meiji Japan, street scene of geishas in Kyoto, cinematic, black and white, –ar 16:9 –v 5</strong></p>
+</div></div><hr>
+</section>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  let localAlternateSentinel = 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+    var links = window.document.querySelectorAll('a:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+          // target, if specified
+          link.setAttribute("target", "_blank");
+      }
+    }
+});
+</script>
+</div> <!-- /content -->
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","selector":".lightbox","openEffect":"zoom","descPosition":"bottom","loop":true});</script>
+<script>videojs(video_shortcode_videojs_video1);</script>
+
+
+
+<script src="index_files/libs/quarto-html/zenscroll-min.js"></script>
+</body></html>
